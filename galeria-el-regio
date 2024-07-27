@@ -1,0 +1,294 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>GALERÍA "El REGIO"</title> 
+    <style> /* Estilo de la página*/
+        body {  /* Cuerpo de la página*/
+            font-family: Times New Roman, Helvetica, sans-serif;/* fuente de la letra */
+            color: #000; /* color de ka letra */
+            margin: 0; /* margwn de la pagina */
+            padding: 0; /* relleno de la página */
+            background-size: cover; /*tamaño de la fuente de fondo*/
+            background-position: center; /* posición de la fuente de fondo */
+            background-attachment: fixed; /* fuente de fondo fija */
+        }
+
+        h1 { /* título de la página*/
+            color: black; /* color de la letra*/
+            text-align: center; /* alineación del texto */
+            margin-top: 20px; /* margen superior */
+        }
+
+        main { /* menu de la página*/
+            max-width: 800px; /* ancho máximo del menú */
+            margin: 20px auto; /* margen de la página*/
+            padding: 20px;/*relleno de menú*/
+            background-color: transparent;/* color de fondo de menú */ 
+            border-radius: 5px;/* borde redondeado menú*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* sombra del menú*/
+        }
+
+        p { /* párrafo de la página*/
+            font-size: 1.2em;/*tamaño de la letra*/
+        }
+
+        #image-container {/*contenedor de la imagen*/
+            text-align: center; /* alineación del texto */
+        }
+
+        #image-container img {/* imagen de la página*/
+            max-width: 100%;/* ancho máximo de la imagen*/
+            height: auto;/* altura de la imagen*/
+            border: 3px solid #ccc;/* borde de la imagen*/
+            border-radius: 10px;/* borde redondeado de la imagen*/
+            margin: 20px 0;/* margen de la imagen*/
+            cursor: pointer;/* puntero del mouse*/
+            transition: transform 0.3s ease;/* transición de la imagen*/
+        }
+
+        #image-container img:hover {/*imagen de la página al pasar el mouse*/
+            transform: scale(1.1);/* escala de la imagen*/
+        }
+        .info-table {/* tabla de la página*/
+            width: 100%;/* ancho de la tabla*/
+            border-collapse: collapse;/*bordado de la tabla*/
+            margin: 12px; /*margen de la tabla*/         
+        }
+        .info-table th, .info-table/    td{/* tabla de la página*/
+            border: 1px solid #ddd;/*borde de la tabla*/
+            padding: 8px;/*relleno de la tabla*/
+            text-align: center;/*alineación del texto*/
+        }
+        .info-table th {/*tabla de la página*/
+            background-color: #f2f2f2;/*color de fondo de la tabla*/
+        }
+
+        button {/* boton de la página*/
+            background-color: transparent;/* color de fondo del botón */
+            color: black;/* color de la letra del botón*/
+            padding: 10px 20px;/* relleno del botón*/
+            border: 1px solid black;/* borde del botón*/
+            border-radius: 5px;/* borde redondeado del botón*/
+            cursor: pointer;/* puntero del mouse*/
+            display: inline-block;/* alineación del botón*/
+            margin: 10px;/*margen del botón*/
+            font-size: 1em;/*tamaño de la letra del botón*/
+            font-weight: bold;/*negrita del botón*/
+            text-transform: uppercase;/*mayúsculas del botón*/
+            letter-spacing: 1px;/* espacio entre letras del botón*/
+        }
+
+        .background-overlay {/*fondo de la página*/
+            position: fixed;/*posición del fondo*/
+            top: 0;/*posición del fondo*/
+            left: 0;/*posición del fondo*/
+            width: 100%;/*ancho del fondo*/
+            height: 100%;/*altura del fondo*/
+            background-color: rgba(0, 0, 0, 0.1);/*color de fondo */
+            z-index: -1;/*capa del fondo*/
+        }
+
+        .contact-info {/*información de contacto*/
+            text-align: center;/*alineación del texto*/
+            margin-top:30px;/* margen superior*/
+        }
+        .contact-info p {
+            margin: 5px 0;/* margen de la información de contacto*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <header>
+        <h1>GALERÍA "El REGIO"</h1>
+    </header>
+    <main>
+        
+      <table class=" Informacion personal ">
+        <tr>
+           <th>Nombre</th>    
+           <td> Alexis Oziel Cabrera Amezcua </td>
+        </tr>
+        <tr>
+           <th>Fecha de nacimiento </th>
+           <td>31 de diciembre de 2004</td>
+        </tr>
+        <tr>
+           <th>Lugar de nacimiento</th>
+           <td> Monterrey Nuevo León, México </td>
+       <tr>  
+           <th>Ocupación</th>
+           <td> Pintor, Dibujante técnico, Estructural, Proyectivo, Arquitecto, Geometra, Anatomísta, Científico informático de datos, Polímata, Analítico, Intelectual, Investigador, Ingeniador, Creativo e inventor, Conocedor, Expositor, Exhibidor. </td>
+         </tr>
+         <tr> 
+             <th>Formación Académico</th>
+             <td> Academia de artes visuales,centro de las artes,Hidalgo</td>
+         </tr>
+         <tr>
+             <th>Año activos</th>   
+             <td> 2019</td>
+         </tr>
+         <tr>
+             <th>Diagnóstico</th>
+             <td> Síndrome de Asperger </td>
+         </tr>  
+         <tr>
+             <th>Sitio web</th> <td> https:www.galeria.el.regio.com</td>
+             </tr>
+      </table>        
+        <p>¡Hola! Soy Alexis Oziel Cabrera Amezcua, este es mi proyecto que fue creado desde el 2023. Haz clic en el link de la parte de abajo donde dice Galería "El Regio" para que pueda ver mis trabajos y seguirme hasta compartir al público, la cultura es lo que deben tener como ser humano.</p>
+        <div id="image-container">
+            <img src="imagen.jpg" alt="" id="current-image" onclick="changeBackgroundImage()">
+        </div>
+        <div style="text-align: center;">
+            <span id="image-number"></span>
+        </div>
+        <button onclick="showPreviousImage()">Anterior imagen</button>
+        <button onclick="showNextImage()">Siguiente imagen</button>
+        <input type="file" id="image-input" style="display: none;" accept="image/*" onchange="updateBackgroundImage(event)">
+        <script>
+            let images = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg", "imagen4.jpg"];
+            let currentImageIndex = 0;
+
+            function showNextImage() {/* funcion de la siguiente imagen*/
+                currentImageIndex = (currentImageIndex + 1) % images.length;/* calcular su indice de la imagen*/
+                updateCurrentImage();/* modificación de la imagen actual*/
+            }
+
+            function showPreviousImage() {/* función de la imagen anterior*/
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;/* calcular su indice de la imagen*/
+                updateCurrentImage();/* modificación de la imagen actual antes de actualizar*/
+            }
+
+            function updateCurrentImage() {
+                const currentImage = document.getElementById("current-image");/* actualizacion del documento  en devolución del elemento Id*/
+                currentImage.src = images[currentImageIndex];/* apunta a la imagen que quieres poner en la página, que puede ser una URL relativa o absoluta,*/       
+                document.getElementById("image-number").textContent = `${currentImageIndex + 1} de ${images.length}`;/*La devolucion de números de imagenes que se muestra ya calculado del índice de la imagen actual con longevidad de la imagen*/
+                loadSavedBackground(); /*Cargar el fondo guardado al cambiar de imagen*/
+            }
+
+            function changeBackgroundImage() {/* funcion del cambio de imagen*/
+                document.getElementById('image-input').click();/* Dar clic en el botón de la imagen */
+            }
+
+            function updateBackgroundImage(event) {
+                const file = event.target.files[0];/* Obtener el archivo seleccionado*/
+                if (file) {/* Si el archivo si existe*/
+                    const reader = new FileReader();/* Se Lee el archivo*/
+                    reader.onload = function (e) {/* Se lee despues de la carga de la funcion e*/
+                        const backgroundImage = e.target.result;/*Se lee el resultado de la carga de la imagen*/
+                        document.body.style.backgroundImage = `url(${backgroundImage})`;/*Se lee el cuerpo de la pagina del fondo de la imagen */
+                        saveCurrentImageAsBackground(backgroundImage); // Guardar la imagen como fondo
+                    }
+                    reader.readAsDataURL(file);/* Se lee los datos del archivo como una url*/
+                }
+            }
+
+            function saveCurrentImageAsBackground(imageData) {/*función de guardar la imagen como fondo*/
+                localStorage.setItem('backgroundImage_' + currentImageIndex, imageData);/*Se guarda la imagen como fondo en el almacenamiento local calculado */
+            }
+
+            function loadSavedBackground() {
+                const savedBackgroundImage = localStorage.getItem('backgroundImage_' + currentImageIndex);/* fondo de la imagen es = al almacenamiento local + el índice de la imagen */
+                if (savedBackgroundImage) {/* si la imagen es guardado*/
+                    document.body.style.backgroundImage = `url(${savedBackgroundImage})`;/* se lee el cuerpo de la página del fondo de la imagen*/
+                } else {/* si no se guarda la imagen*/
+                    document.body.style.backgroundImage = 'none';/* se lee el cuerpo de la página del fondo de pantalla*/
+                }
+            }
+
+            window.onload = function () {/* cargando ventana*/
+                updateCurrentImage();
+                loadSavedBackground();/* cargar el fondo guardado al cargar la página*/
+            }
+        </script>
+        <p>Proyectos técnicos relacionados con dibujo, pintura, arquitectura, dibujo técnico, estructural, proyecto, anatomía, perspectivas, geometría, entre otros.</p>
+        <a href="https://photos.google.com/share/AF1QipPf_teAqc00MyrkfWxaL0ZF9R_1jxxwPmFhLX-7VZjStc4K8tmb8tt81NvYL9emUA?key=YXJ0SThDM1B2UXlWLUZfTkJFRkVWODZNSTRWYTN3" 
+            target="_blank">Entra y dale clic a esta página del enlace: https:www.galeria.el.regio.com</a>
+
+        <p>Es un Pintor, Dibujante técnico, Estructural, Proyectivo, Arquitecto, Geometra, Anatomísta, Científico informático de datos, Polímata, Analítico, Intelectual, Investigador, Ingeniador, Creativo e inventor, Conocedor.</p>
+
+        <p>Nació el 31 de diciembre en 2004 en Monterrey, Nuevo León, México. Vivió en Santa Catarina del Estado de Nuevo León hasta 2006, luego se mudó con sus padres al Estado de Hidalgo hacia Mineral de la Reforma y  Pachuca de Soto.</p>
+
+        <p>Es diagnosticado con una discapacidad, el Síndrome de Asperger. Aunque necesitaba ir a terapias para ayudar con su problema, esta discapacidad no es una enfermedad, sino una condición genética que puede hacer de las  personas unas de las más inteligentes del mundo.</p>
+
+        <p>Comenzó sus estudios en 2010, empezando con el dibujo mediante figuras geométricas. En 2019 presentó una  pintura en la secundaria que sorprendió a sus padres.</p>
+
+        <p>En 2020 tomó clases de dibujo y pintura con un maestro en casa, mejorando sus trazos y el manejo del lápiz y el pincel.</p>
+
+        <p>Entre 2021 y 2022 vendió varios de sus trabajos y ha realizado varias exposiciones en diferentes espacios y lugares.</p>
+        <p>En el año 2022 entró a una academia de artes visuales en el Centro de las Artes de Hidalgo para aprender teoría y dibujo natural en anatomía humana, geometría del espacio,paisaje,entre otras.</p>
+
+        <p>En 2023 estudió una especialidad técnica en ciencias de datos e información, aprendiendo a manejar varios programas de Microsoft, lenguajes, creación de páginas y teoría fundamental utilizando algoritmos mediante el  dibujo de diagramas de flujo.</p>
+
+        <p>Creó la galería "El Regio" en 2023, donde organizó varios proyectos de diferentes áreas y temas en una página de Google Photos mediante su enlace.</p>
+
+        <p>Ha leído documentos, libros, visto videos e investigado sobre el arte del dibujo y pintura, arquitectura,  dibujo técnico, estructural, proyectivo, geometría, anatomía, perspectivas, psicología, humanidades,ciencias y el color para su futuro al ejercelo y llevarlo a cabo a lo largo de su vida.</p>
+
+        <p>En 2024 está creando una página web de su galería usando HTML para compartir sus conocimientos tecnológicos y lógicos hasta lo artístico, con la perfección como objetivo primordial.</p>
+        <div class="contact-info">
+            <p>Correo electrónico: <a
+                    href="mailto:alexisozielcabreraamezcua@gmail.com">alexisozielcabreraamezcua@gmail.com</a></p>
+            <p>Número de teléfono: <a href="tel:+527713015496">+52 7713015496</a></p>
+            <p>Página de Facebook: <a href="https://www.facebook.com/alexisozielcabrera" target="_blank">Alexis Oziel
+                    Cabrera</a></p>
+            <button onclick="shareLink('whatsapp')">Compartir en WhatsApp</button>
+            <button onclick="shareLink('facebook')">Compartir en Facebook</button>
+            <button onclick="shareLink('messenger')">Compartir en Messenger</button>
+            <button onclick="shareLink('gmail')">Compartir en Gmail</button>
+            <button onclick="saveLink()">Guardar Enlace</button>
+        </div>
+        <script>/* cierre de la funcion*/
+            function shareLink(platform) {/* compartir en la plataforma el link*/
+                const url = 'https://photos.google.com/share/AF1QipPf_teAqc00MyrkfWxaL0ZF9R_1jxxwPmFhLX-7VZjStc4K8tmb8tt81NvYL9emUA?key=YXJ0SThDM1B2UXlWLUZfTkJFRkVWODZNSTRWYTN3';/* el link de la galería*/
+                const text = 'Visita la galería de Alexis Oziel Cabrera Amezcua.';/* el texto de bienvenido*/
+                let shareUrl;/* compartir url*/
+
+                switch (platform) {
+                    case 'whatsapp':/* caso de compartir en WhatsApp*/
+                        shareUrl = `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`;
+                        break;/*cierre de compartir en WhatsApp*/
+                    case 'facebook':/*caso de compartir en el Facebook*/
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+                        break;/*cierre de compartir en Facebook*/
+                    case 'messenger':/* caso de compartir en Messenger*/
+                        shareUrl = `fb-messenger://share?link=${encodeURIComponent(url)}`;
+                        break;/*cierre de compartir en Messenger*/
+                    case 'gmail':/* caso de compartir en Gmail*/
+                        shareUrl = `mailto:?subject=${encodeURIComponent('GALERÍA "El REGIO"')}&body=${encodeURIComponent(text + ' ' + url)}`;/*compartir link =Se utiliza el mailto:`: Es el protocolo utilizado para enviar correos electrónicos desde un navegador.- `?`: Indica que se van a pasar parámetros adicionales.-`subject=${encodeURIComponent('GALERÍA "El REGIO"')}`: Establece el asunto del correo electrónico. `encodeURIComponent` codifica la cadena para que pueda ser utilizada en una URL.- `&`: Separador entre parámetros.- `body=${encodeURIComponent(text + ' ' + url)}`: Establece el cuerpo del correo electrónico. `encodeURIComponent` codifica la cadena para que pueda ser utilizada en una URL. `text + ' ' + url` concatena el texto y la URL para incluirlos en el cuerpo del correo. */
+                    console.log(shareUrl);/*imprimir y compartir enlace*/
+ 
+                        break;/*cierre de compartir en Gmail*/
+                    default:/*caso por defecto*/
+                       console.log('Plataforma soportada');
+                     
+                        return;/* Devolver pantalla*/
+                }
+
+                window.open(shareUrl, '_blank');/*abrir el wnlace wn una nueva ventana*/
+            }
+
+            function saveLink() {/*función de guardar enlace*/
+                const link = document.createElement('a');/*crea en un elemento del documento*/
+                link.href = 'https://photos.google.com/share/AF1QipPf_teAqc00MyrkfWxaL0ZF9R_1jxxwPmFhLX-7VZjStc4K8tmb8tt81NvYL9emUA?key=YXJ0SThDM1B2UXlWLUZfTkJFRkVWODZNSTRWYTN3';/*el link de la galería*/
+                link.target = '_blank';/*abrir enlace en una nueva ventana*/
+                link.textContent = 'Guardar Enlace';/* en el link del contenido de texto se guarda enlace*/
+                link.click();/*Dar clic en el enlace */
+                 
+            }
+
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Todos los derechos del autor están reservados por la persona que creó el proyecto</p>
+    </footer> 
+</body>
+</html>
+
+
+
